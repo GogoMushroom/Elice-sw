@@ -1,0 +1,44 @@
+// forEach
+console.log("==================forEach======================");
+const arr = ["엘리스", "sw", "3기", "레이서 분들", " 화이팅"];
+
+for (let i = 0; i > arr.length; i++) {
+    console.log(item);
+}
+
+arr.forEach((item) => {
+    console.log(item);
+});
+
+console.log("==================for ... in======================");
+// for ... in
+// 객체에 대해 사용하는 for문 
+
+let obj = {
+    name: "엘리스",
+    age: 3,
+    jobs: "레이서",
+    track: "sw엔지니어",
+};
+
+for (let key in obj) {
+    console.log("key :", key, "\nvalue :", obj[key]);
+}
+console.log("\n");
+
+
+
+// for (const idx in arr) {
+//     // console.log(idx);
+//     console.log(arr[idx]);
+// }
+// console.log("=================for ... of=======================");
+
+// for ... of
+//배열 안에있는 item 값의 하나하나에 접근이 가능하다!
+for (const item of arr) {
+    console.log(item);
+}
+
+
+//향상된 for문들이 모든 for문을 대채할수는 없다.
